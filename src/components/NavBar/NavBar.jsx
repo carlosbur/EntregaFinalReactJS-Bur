@@ -4,13 +4,16 @@ import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
     return (
-        <div className='menu'>
-            <p>Budo Shop</p>
-            <p>Enlace 1</p>
-            <p>Enlace 2</p>
-            <p>Enlace 3</p>
+        
+        <nav className='menu'>
+            <h3>Budo Shop</h3>
+            <div className='botonera'>
+                <button type='button' class="btn btn-primary mx-4">La empresa</button>
+                <button type='button' class="btn btn-primary mx-4">Productos</button>
+                <button type='button' class="btn btn-primary mx-4">Contacto</button>
+            </div>
             <CartWidget/>
-        </div>
+        </nav>
     )
 }
 

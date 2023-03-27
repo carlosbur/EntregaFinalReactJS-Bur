@@ -1,4 +1,10 @@
 .menu{
     display: flex;
     justify-content: space-around;
+    padding-top: 15px;
+    background-color: whitesmoke;
+}
+
+.botonera{
+    margin-bottom: 15px;
 }
