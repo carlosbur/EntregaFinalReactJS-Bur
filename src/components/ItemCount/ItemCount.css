@@ -1,0 +1,11 @@
+
+.tituloContador{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}

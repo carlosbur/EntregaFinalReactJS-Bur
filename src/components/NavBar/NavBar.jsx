@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         
         <nav className='menu'>
-            <h3>Budo Shop</h3>
+            <h1>Budo Shop</h1>
             <div className='botonera'>
                 <button type='button' class="btn btn-primary mx-4">La empresa</button>
                 <button type='button' class="btn btn-primary mx-4">Productos</button>
