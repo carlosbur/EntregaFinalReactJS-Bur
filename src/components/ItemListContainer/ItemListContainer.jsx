@@ -12,11 +12,7 @@ const ItemListContainer = (props) => {
     
     const [loading, setLoading] = useState(false)
 
-    const param = useParams()
-
-    console.log (useParams)
-
-    const {categoryId} = useParams
+    const {categoryId} = useParams()
 
     useEffect(() =>{
         
