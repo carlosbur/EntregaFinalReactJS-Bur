@@ -3,6 +3,7 @@ import { pedirProductos } from '../../helpers/pedirProductos'
 import {ImSpinner3} from 'react-icons/im'
 import ItemList from '../ItemList/ItemList'
 import "./ItemListContainer.css"
+import { useParams } from 'react-router-dom'
 
 
 const ItemListContainer = (props) => {
@@ -11,18 +12,27 @@ const ItemListContainer = (props) => {
     
     const [loading, setLoading] = useState(false)
 
+    const param = useParams()
+
+    console.log (useParams)
+
+    const {categoryId} = useParams
+
     useEffect(() =>{
         
         setLoading(true)
         pedirProductos()
             .then((res) => {
-                setItems(res)
-                console.log(res)
+                if(categoryId) {
+                    setItems(res.filter(prod => prod.category === categoryId))
+                }else{
+                    setItems(res)
+                }
             })
             .catch((error) => console.log(error))
             .finally(()=>{setLoading(false)})
 
-    }, [])
+    }, [categoryId])
         
 
 

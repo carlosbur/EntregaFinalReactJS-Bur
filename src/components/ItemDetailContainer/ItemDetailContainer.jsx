@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { pedirProductos } from '../../helpers/pedirProductos'
-import {ImSpinner3} from 'react-bootstrap/im'  
-import ItemDetail from '..ItemDetail/ItemDetail'
+import {ImSpinner3} from 'react-icons/im'  
+import ItemDetail from '../ItemDetail/ItemDetail'
 
 
 const ItemDetailContainer = () => {
