@@ -36,13 +36,9 @@ const ItemListContainer = (props) => {
         <div>
             {
                 loading 
-                ? <ImSpinner3/>
+                ? <div className='spinner'> <ImSpinner3/> </div>
                 : <ItemList productos={items}/>
-            }
-            
-            {/* <h2>Budo Shop</h2>
-            <hr/>
-            <h3>{props.greeting}</h3> */}
+            }           
         </div>
     )
 }

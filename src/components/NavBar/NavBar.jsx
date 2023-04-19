@@ -7,8 +7,10 @@ const NavBar = () => {
     return (
         
         <nav className='menu'>
+            <NavLink to="/">
             <h1>Budo Shop</h1>
-            
+            </NavLink>
+
             <ul className='botonera'>
                 <li> <NavLink to="/"> Principal</NavLink> </li>
 
