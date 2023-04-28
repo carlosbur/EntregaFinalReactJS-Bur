@@ -5,7 +5,8 @@ export const stock = [
         description: "Tobillera",
         price: 2300,
         image: "https://picsum.photos/200/300",
-        category: "protecciones"
+        category: "protecciones",
+        stock: 20
     },
 
     {
@@ -13,7 +14,8 @@ export const stock = [
         description: "Empeinera",
         price: 2700,
         image: "https://picsum.photos/200/300",
-        category: "protecciones"
+        category: "protecciones",
+        stock: 20
     },
 
     {
@@ -21,7 +23,8 @@ export const stock = [
         description: "Karategi",
         price: 8900,
         image: "https://picsum.photos/200/300",
-        category: "indumentaria"
+        category: "indumentaria",
+        stock: 20
     },
 
     {
@@ -29,7 +32,9 @@ export const stock = [
         description: "Guantines",
         price: 4100,
         image: "https://picsum.photos/200/300",
-        category: "protecciones"
+        category: "protecciones",
+        stock: 20
+
     },
 
     {
@@ -37,7 +42,8 @@ export const stock = [
         description: "Campera",
         price: 4900,
         image: "https://picsum.photos/200/300",
-        category: "indumentaria"
+        category: "indumentaria",
+        stock: 20
     },
 
     {
@@ -45,7 +51,8 @@ export const stock = [
         description: "Pantalon",
         price: 3600,
         image: "https://picsum.photos/200/300",
-        category: "indumentaria"
+        category: "indumentaria",
+        stock: 20
     },
 
 ]

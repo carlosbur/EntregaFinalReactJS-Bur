@@ -11,13 +11,29 @@ import {
   Route,
 } from 'react-router-dom'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-
+import { CartContext } from './components/context/CartContex';
+import { useState } from 'react';
 
 function App() {
 
+  const [carrito, setCarrito] = useState([])
+
+  console.log(carrito)
+
+  const addToCart = (item) => {
+    setCarrito([...carrito, item])
+  }
+
+  const calcularCantidad = () => {
+    return carrito.reduce((acc, prod) => acc + prod.counter, 0)
+  }
 
   return (
-
+    <CartContext.Provider value={{
+      addToCart,
+      calcularCantidad,
+      
+    }}>
     <div className='App'>
       <Router>
         <NavBar/>
@@ -32,7 +48,7 @@ function App() {
         </Routes>
       </Router>
     </div>
-
+    </CartContext.Provider>
 
 
   );

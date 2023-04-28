@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { GrCart } from 'react-icons/gr';
 import './CartWidget.css'
+import { CartContext } from '../context/CartContex';
 
 const CartWidget = () => {
+    
+    const {calcularCantidad} = useContext(CartContext)
+
     return (
         <div>
             <GrCart className="carrito"/>
-            1
+            <span>{calcularCantidad()}</span>
         </div>
     )
 }
