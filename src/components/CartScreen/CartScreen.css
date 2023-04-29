@@ -1,0 +1,9 @@
+* {
+    text-align: center;
+}
+
+.listado {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
