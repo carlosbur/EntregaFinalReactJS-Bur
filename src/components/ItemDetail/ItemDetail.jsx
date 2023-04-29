@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Card, Button } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContex'
@@ -49,6 +49,9 @@ const ItemDetail = ({ id, description, price, image, category, stock }) => {
                     <Button variant="primary" onClick={sumarAlCarrito}>Agregar al carrito</Button>
                 </Card.Body>
                 <Button onClick={volverAtras} variant='primary'>Volver</Button>
+                <Link to='/cart' className='btn btn-info my-2'>
+                    Ir al Carrito
+                </Link>
             </Card>
         </div>
     )

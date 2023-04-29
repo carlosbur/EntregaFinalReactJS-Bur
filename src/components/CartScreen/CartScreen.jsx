@@ -40,7 +40,11 @@ const CartScreen = () => {
                         <strong>Precio total: $ {precioTotal()} </strong>
                         <hr />
                         <Button className='bt btn-danger' onClick={vaciarCarrito}>Vaciar Carrito</Button>
+                        <Link className='btn btn-success mx-3' to='/checkout'>
+                            Terminar Compra
+                        </Link>
                     </>
+
             }
         </div>
     )
