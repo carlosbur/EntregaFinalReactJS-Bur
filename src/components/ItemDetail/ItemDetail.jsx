@@ -6,7 +6,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContex'
 
 
-const ItemDetail = ({ id, description, price, image, category, stock }) => {
+const ItemDetail = ({ id, name, description, price, image, category, stock }) => {
 
     const navigate = useNavigate()
 
@@ -24,6 +24,7 @@ const ItemDetail = ({ id, description, price, image, category, stock }) => {
 
         const newItem = {
             id, 
+            name,
             description,
             image,
             price,

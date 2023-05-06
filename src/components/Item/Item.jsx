@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap'
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-const Item = ({ id, description, price, image, category }) => {
+const Item = ({ id, name, description, price, image, category }) => {
     return (
         <div className='item'>
             <Card style={{ width: '18rem' }}>

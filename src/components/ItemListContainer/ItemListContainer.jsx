@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { pedirProductos } from '../../helpers/pedirProductos'
+// import { pedirProductos } from '../../helpers/pedirProductos'
+import { getFirestore } from '../../Firebase/Config'
 import {ImSpinner3} from 'react-icons/im'
 import ItemList from '../ItemList/ItemList'
 import "./ItemListContainer.css"
@@ -17,21 +18,27 @@ const ItemListContainer = (props) => {
     useEffect(() =>{
         
         setLoading(true)
-        pedirProductos()
-            .then((res) => {
-                if(categoryId) {
-                    setItems(res.filter(prod => prod.category === categoryId))
-                }else{
-                    setItems(res)
-                }
-            })
-            .catch((error) => console.log(error))
-            .finally(()=>{setLoading(false)})
 
+        const db = getFirestore();
+
+        const productos = categoryId
+            ?db.collection('productos').where('category', '==', categoryId)
+            :db.collection('productos')
+            productos.get()
+                .then((res) => {
+                    const newItem = res.docs.map((doc)=> {
+                        return {id: doc.id, ...doc.data()}
+                    })
+                    console.table(newItem)
+                    setItems(newItem)
+                })
+                .catch((error) => console.log(error))
+                .finally(()=>{
+                setLoading(false)
+                })
     }, [categoryId])
+            
         
-
-
     return (
         <div>
             {
