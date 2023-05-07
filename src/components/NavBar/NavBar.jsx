@@ -14,7 +14,7 @@ function BasicExample() {
     <Navbar bg="light" expand="lg">
         <Container>
         <Navbar.Brand><Link to='/'>
-            <img src="./logo.png"/>
+            <img src=".././logo.png" className='logo'/>
             </Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

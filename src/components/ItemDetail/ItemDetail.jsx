@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import './ItemDetail.css'
 import { Card, Button } from 'react-bootstrap'
 import { useNavigate, Link } from 'react-router-dom'
 import { useState } from 'react'
