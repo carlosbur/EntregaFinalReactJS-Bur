@@ -37,8 +37,6 @@ const Checkout = () => {
             total_price: precioTotal(),
             data: firebase.firestore.Timestamp.fromDate(new Date())
         }
-        console.log(orden)
-
         const db = getFirestore()
 
         const ordenes = db.collection('ordenes')

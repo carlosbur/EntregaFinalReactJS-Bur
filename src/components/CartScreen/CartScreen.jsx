@@ -27,8 +27,8 @@ const CartScreen = () => {
                                 <>
                                     <div className='listado'>
                                         <p>Producto: {prod.description}</p>
-                                        <p>$</p>
-                                        <p>Cantidad:</p>
+                                        <p>$: {prod.price}</p>
+                                        <p>Cantidad: {prod.counter} </p>
                                     </div>
                                     <Button className="btb btn-danger" onClick={() => removerItem(prod.id)}>
                                         <BsFillTrashFill />
