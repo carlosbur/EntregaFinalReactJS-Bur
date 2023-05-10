@@ -2,8 +2,8 @@
 <h2 align="center">Hola 👋, Soy Charlie Bur</h2>
 <h3 align="center">Sobre mi proyecto de Budo Shop</h3>
 
-<p align="left">
-Este proyecto es un simulador de e-commerce. Al ingresar al sitio, vemos un listado de los productos a la venta. Además, podemos los productos se encuentran categorizados en dos grupos, a los que puede accederse desplegando un menú en el Navbar.
+<p align="justify">
+Este proyecto es un simulador de e-commerce. Al ingresar al sitio, vemos un listado de los productos a la venta. Además, los productos se encuentran categorizados en dos grupos, a los que puede accederse desplegando un menú en el Navbar.
 Cada Producto tiene la opción de "Ver más detalles", que nos lleva a una descrpción más detallada de cada uno y donde, además, podemos agregarlo al carrito en la cantidad que deseemos (siempre que haya stock disponible).
 En el Navbar tenemos acceso constante al carrito de compras, que muestra el estado actualizado de nuestra selección de productos. Además, podemos simular la finalización de una compra, completando un formulario al efecto.
 Toda la operación queda registrada en Firebase, donde contamos con el listado de productos alojado y un registro de todas las órdenes de compra realizadas.
