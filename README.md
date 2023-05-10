@@ -9,6 +9,9 @@ En el Navbar tenemos acceso constante al carrito de compras, que muestra el esta
 Toda la operación queda registrada en Firebase, donde contamos con el listado de productos alojado y un registro de todas las órdenes de compra realizadas.
 </p>
 
+<p align="justify">
+En el desarrollo de la aplicación, utilicé Bootstrap, React-Bootstrap, React-Icons, Sweet Alert 2 y Firebase.
+</p>
 <h3>Sobre mi perfil tech</h3>
 
 - 🌱 Actualmente aprendiendo **JS**
