@@ -14,7 +14,7 @@ En el desarrollo de la aplicación, utilicé Bootstrap, React-Bootstrap, React-I
 </p>
 <h3>Sobre mi perfil tech</h3>
 
-- 🌱 Actualmente aprendiendo **JS**
+- 🌱 Actualmente aprendiendo **React JS**
 
 - 👨‍💻 Todos mis proyectos están disponibles en [https://github.com/carlosbur](https://github.com/carlosbur)
 
